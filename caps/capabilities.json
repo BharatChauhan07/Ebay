@@ -1,0 +1,55 @@
+{
+  "android": {
+    "platformName": "android",
+    "platformVersion": "7.0",
+    "app": "./build/wordpress.apk",
+    "appPackage": "org.wordpress.android",
+    "appActivity": "org.wordpress.android.ui.WPLaunchActivity",
+    "deviceName": "android",
+    "noSign": true
+  },
+  "iOS": {
+    "platformName": "iOS",
+    "app": {
+      "simulator": "./build/WordPress.zip"
+    },
+    "deviceName": "iPhone",
+    "wdaLaunchTimeout": 80000,
+    "wdaConnectionTimeout": 80000,
+    "preventWDAAttachments": true,
+    "clearSystemFiles": true,
+    "shouldUseSingletonTestManager": false,
+    "simpleIsVisibleCheck": true,
+    "maxTypingFrequency": 10
+  },
+  "hostMachines": [
+    {
+      "machineIP": "127.0.0.1",
+      "simulators": [
+        {
+          "deviceName": "iPhone 6",
+          "OS": "11.3"
+        },
+        {
+          "deviceName": "iPhone 7",
+          "OS": "11.3"
+        }
+      ]
+    },
+    {
+      "machineIP": "10.234.1.91",
+      "simulators": [
+        {
+          "deviceName": "iPhone 6",
+          "OS": "11.2"
+        },
+        {
+          "deviceName": "iPhone 7",
+          "OS": "11.2"
+        }
+      ]
+    }
+  ],
+  "ATDServiceHost":"127.0.0.1",
+  "ATDServicePort":"3000"
+}
